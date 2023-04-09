@@ -6,8 +6,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ed Tech Website</title>
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <div class="container min-h-screen px-[140px] ">
+        <!-- Nav Start -->
+       <nav class="py-5">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="text-3xl font-semibold cursor-pointer">Ed Pro</a>
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Register</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Register</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#289BDE]">Get started</a>
+            </div>
+          </div>
+       </nav>
+        
+        
+        <!-- Nav End -->
+        <!-- Slider Start -->
+        <div class="carousel w-full">
+            <!-- item-1 -->
+            <div id="slide1" class="carousel-item relative w-full h-[700px] ">
+
+                <div class="hero min-h-screen" style="background-image: url(/images/cover/cover-1.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div> 
+            <!-- item-2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url(/images/cover/cover-2.jpg);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div> 
+            <!-- item-3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url(/images/cover/cover-3.jpg);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div> 
+        </div>
+        <!-- Slider End -->
+        <!-- Courses Start -->
+        <div class="text-center">
+            <div class="p-10">
+                <h2 class="w-full text-center text-[45px] leading-[60px] font-semibold">Discover Our<br> Popular Courses</h2>
+                <p class="w-full text-center text-[16px] leading-[30px]">It is a long established fact that a reader will be distracted<br> by the readable content of a page when looking at its layout.</p>
+
+            </div>
+            
+            <!-- Courses 1 -->
+            <div class="flex justify-center gap-5 mt-50">
+                <div class="card card-side bg-base-100 shadow-xl ">
+                   <img src="/images/course/course-1.png" class="w-full h-full" alt="Movie"/>
+                    <div class="card-body">
+                      <h2 class="card-title text-left">Fundamental Of UI/UX Design</h2>
+                      <p class="text-left">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                      <div class="card-actions justify-start">
+                        <span class="font-[600] text-[#289BDE] text-[18px]"> Price : 20$</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl">
+                    <img src="/images/course/course-1.png" class="w-full h-full" alt="Movie"/>
+                    <div class="card-body">
+                      <h2 class="card-title text-left">Javascript Basic to advanced</h2>
+                      <p class="text-left">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                      <div class="card-actions justify-start">
+                        <span class="font-[600] text-[#289BDE] text-[18px]"> Price : 20$</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Courses 2 -->
+            <div class="flex justify-center gap-5 py-5">
+                <div class="card card-side bg-base-100 shadow-xl ">
+                   <img src="/images/course/course-1.png" class="w-full h-full" alt="Movie"/>
+                    <div class="card-body">
+                      <h2 class="card-title text-left">Fundamental Of UI/UX Design</h2>
+                      <p class="text-left">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                      <div class="card-actions justify-start">
+                        <span class="font-[600] text-[#289BDE] text-[18px]"> Price : 20$</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl">
+                    <img src="/images/course/course-1.png" class="w-full h-full" alt="Movie"/>
+                    <div class="card-body">
+                      <h2 class="card-title text-left">Javascript Basic to advanced</h2>
+                      <p class="text-left">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                      <div class="card-actions justify-start">
+                        <span class="font-[600] text-[#289BDE] text-[18px]"> Price : 20$</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Courses 3 -->
+            <div class="flex justify-center gap-5 py-5">
+                <div class="card card-side bg-base-100 shadow-xl ">
+                   <img src="/images/course/course-1.png" class="w-full h-full" alt="Movie"/>
+                    <div class="card-body">
+                      <h2 class="card-title text-left">Fundamental Of UI/UX Design</h2>
+                      <p class="text-left">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                      <div class="card-actions justify-start">
+                        <span class="font-[600] text-[#289BDE] text-[18px]"> Price : 20$</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl">
+                    <img src="/images/course/course-1.png" class="w-full h-full" alt="Movie"/>
+                    <div class="card-body">
+                      <h2 class="card-title text-left">Javascript Basic to advanced</h2>
+                      <p class="text-left">Some quick example text to build on the card title and make up the bulk of the card.</p>
+                      <div class="card-actions justify-start">
+                        <span class="font-[600] text-[#289BDE] text-[18px]"> Price : 20$</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- see more btn -->
+            <button class="btn btn-primary bg-[#289BDE] ">See More Courses</button>
+        </div>
+        <!-- Couses End -->
+        <!-- Stat Card Start -->
+        <div class="py-20">
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+                <img src="/images/working.png" class="w-full h-auto" alt="Album"/>
+                <div class="card-body py-[130px] px-[54px]">
+                  <h2 class="card-title font-semibold text-left text-[45px] leading-[60px]">Explore The elearning Institute</h2>
+                  <p class="font-normal text-left text-[16px] leading-[30px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure.
+                 </p>
+                    <p class="font-normal text-left text-[16px] leading-[30px]">Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
+                <div class="stats stats-vertical lg:stats-horizontal ">
+  
+                    <div class="stat">
+                      
+                      <div class="stat-value">3.2K+</div>
+                      <div class="stat-desc">Online Course</div>
+                    </div>
+                    
+                    <div class="stat">
+                      
+                      <div class="stat-value">600+</div>
+                      <div class="stat-desc">Expert member</div>
+                    </div>
+                    
+                    <div class="stat">
+                      
+                      <div class="stat-value">1k+</div>
+                      <div class="stat-desc">Rating & Review</div>
+                    </div>
+                </div>
+
+                <div class="card-actions justify-start">
+                <button class="btn btn-primary bg-[#289BDE]">Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- Stat Card End -->
+        <!-- Registration Card Start -->
+        <div class="flex justify-between items-center bg-[#289BDE] px-[100px] py-[80px] rounded mt-20">
+            <div>
+                <h2 class="font-semibold text-left text-white text-[45px] leading-[60px]">Ready to join?</h2>
+                  <p class="font-normal text-left text-white text-[16px] leading-[30px] pr-80">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                 </p>
+            </div>
+            <button class="btn btn-primary bg-[#ffff] text-[#289BDE]">Register</button>
+        </div>
+        <!-- Registration Card End -->
+            
+    </div>
+
 </body>
 </html>
